@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "allowJs": true,
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "COMPONENTS/*": ["./src/components/*"],
+            "ACTIONS/*": ["./src/actions/*"],
+            "CONTAINERS/*": ["./src/containers/*"],
+            "REDUCERS/*": ["./src/reducers/*"]
+        }  
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "public"
+    ]
+}
