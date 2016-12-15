@@ -33,7 +33,6 @@
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
     "@kadira/storyshots": "^2.1.0",
-    "@types/immutable": "^3.8.6",
     "@types/node": "^6.0.52",
     "@types/react": "^0.14.55",
     "@types/react-router": "^2.0.41",
