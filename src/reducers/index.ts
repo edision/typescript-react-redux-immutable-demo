@@ -3,13 +3,13 @@ import * as Redux from "redux";
 import * as Immutable from "immutable";
 // reducers
 import counter from "./counter";
-import routerReducer from './routerReducer';
+import routing from './routing';
 
 
 
 const rootReducer = {
     counter,
-    routing: routerReducer
+    routing
 };
 
 // export type RootReducer = {
