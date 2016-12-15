@@ -1,11 +1,11 @@
 {
   "name": "counter",
   "version": "1.0.0",
-  "description": "",  
-"repository": {
-  "type": "git",
-  "url": "git@github.com:edision/typescript-react-redux-immutable-demo.git"
-},
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:edision/typescript-react-redux-immutable-demo.git"
+  },
   "scripts": {
     "test": "jest",
     "start:dev": "set NODE_ENV=development&&webpack-dev-server --port 3333 --content-base public/ --config webpack/webpack.config.js --inline --hot --compress --display-error-details --open",
