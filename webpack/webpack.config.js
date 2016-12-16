@@ -45,10 +45,27 @@ if (!isProduction) {
         loader: 'source-map-loader'
     }];
     // 开发插件
+    // 编译时宏变量
+    config.plugins.unshift(new webpack.DefinePlugin({
+        NODE_ENV: JSON.stringify("development")
+    }));
     // 导入模块时，大小写错误时，编译提示错误
     config.plugins.push(new CaseSensitivePathsPlugin());
     // webpack-dev-server 启动时安装了npm 模块，自动重启webpack-dev-server
     config.plugins.push(new WatchMissingNodeModulesPlugin(path.resolve(__dirname, "../node_modules")));
+    // 反向代理
+    // config.devServer = {
+    //     historyApiFallback: {
+    //         disableDotRule: true,
+    //         htmlAcceptHeaders: ["text/html"]
+    //     },
+    //     proxy: [{
+    //         context: ["/callback/**", "/api/**"],
+    //         target: 'http://1688qntrade.souyousoft.com',
+    //         secure: false,
+    //         changeOrigin: true
+    //     }]
+    // };
 } else {
     config.plugins.push(new webpack.optimize.OccurrenceOrderPlugin());
     config.plugins.push(new webpack.optimize.DedupePlugin());

@@ -1,6 +1,5 @@
-import * as Redux from "redux";
 import { createReducer } from "redux-immutablejs";
-import * as Immutable from "immutable";
+
 // actions
 import { CounterImmutableState, ACTION_HANDLERS } from "../actions/CounterActions";
 
